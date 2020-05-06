@@ -1,0 +1,29 @@
+{
+  "name": "running-from-javascript",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "reason": {
+    "react-jsx": 3
+  },
+  "bs-dependencies": [
+    "reason-react"
+  ],
+  "refmt": 3,
+  "gentypeconfig": {
+    "language": "typescript",
+    "use-bs-dependencies": true,
+    "module": "commonjs"
+  }
+}
