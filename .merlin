@@ -7,6 +7,6 @@ B /home/logan/code/running-from-javascript/node_modules/bs-platform/lib/ocaml
 FLG -w +a-4-9-40-41-42-50-61-102
 S /home/logan/code/running-from-javascript/node_modules/reason-react/lib/ocaml
 B /home/logan/code/running-from-javascript/node_modules/reason-react/lib/ocaml
-S src
-B lib/bs/src
+S src/ep2_adding_typescript
+B lib/bs/src/ep2_adding_typescript
 ####BSB GENERATED: NO EDIT}

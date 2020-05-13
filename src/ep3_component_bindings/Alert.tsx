@@ -5,15 +5,19 @@ type options = {
 };
 
 type props = {
-  type: "success" | "info" | "warning" | "error",
+  type: "success" | "info" | "warning" | "error"
   children: ReactElement
   isActive: boolean
-  className?: string,
-  options?: options,
+  className?: string
+  options?: options
 }
 
-export function Notice({ className = "", ...props }: props) {
+export function Alert({ className = "", ...props }: props) {
   let [isActive, setIsActive] = React.useState(() => props.isActive)
+
+  React.useEffect(() => {
+    setIsActive(_ => props.isActive)
+  }, [props.isActive])
 
   React.useEffect(() => {
     if (props.options?.dismissTime && isActive) {
@@ -23,12 +27,12 @@ export function Notice({ className = "", ...props }: props) {
     }
   }, [isActive, props.options])
 
-  return isActive && (
-    <div className={`${className} notice notice-type--${props.type}`}>
-      children
+  return isActive ? (
+    <div className={`${className} alert alert-type--${props.type}`}>
+      {props.children}
     </div>
-  )
+  ) : null
 
 }
 
-export default Notice
+export default Alert

@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { File } from "./File.gen"
+import Alert from './ep3_component_bindings/Alert';
 
 function App() {
+  let [alertIsActive, setAlertIsActive] = React.useState(() => false)
   return (
     <div className="App">
       <header className="App-header">
-        <File><span>Stuff here</span></File>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={_ => setAlertIsActive(_ => true)}>Activate Alert</button>
+        <Alert type="success" isActive={alertIsActive} options={{ dismissTime: 1000 }}>
+          <div>
+            Success!
+          </div>
+        </Alert>
       </header>
     </div>
   );
