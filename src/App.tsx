@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Alert from './ep3_component_bindings/Alert';
+import Alert from './components/Alert';
 
 function App() {
   let [alertIsActive, setAlertIsActive] = React.useState(() => false)
