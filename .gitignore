@@ -26,3 +26,4 @@ yarn-error.log*
 *.bs.js
 *.gen.tsx
 .merlin
+.bsb.lock
