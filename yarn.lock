@@ -2539,10 +2539,10 @@ browserslist@4.10.0, browserslist@^4.0.0, browserslist@^4.6.2, browserslist@^4.6
     node-releases "^1.1.52"
     pkg-up "^3.1.0"
 
-bs-platform@^7.2.2:
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-7.2.2.tgz#76fdc63e4889458ae3d257a0132107a792f2309c"
-  integrity sha512-PWcFfN+jCTtT/rMaHDhKh+W9RUTpaRunmSF9vbLYcrJbpgCNW6aFKAY33u0P3mLxwuhshN3b4FxqGUBPj6exZQ==
+bs-platform@8.1:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.1.0.tgz#2500257f28a05dd66dd25e540a2f5f7289c929f4"
+  integrity sha512-S13EDkVpitm3AWx2ZrWDco8na95x22kaUurS8XPj9esdAyKCtDkyQjYQHtUxwAQd8CmAZn7hnuxiuLk7SCOy0w==
 
 bser@2.1.1:
   version "2.1.1"

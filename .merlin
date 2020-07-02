@@ -4,7 +4,7 @@ FLG -open RunningFromJavascript
 FLG -ppx '/home/logan/code/running-from-javascript/node_modules/bs-platform/linux/bsc.exe -as-ppx -bs-jsx 3'
 S /home/logan/code/running-from-javascript/node_modules/bs-platform/lib/ocaml
 B /home/logan/code/running-from-javascript/node_modules/bs-platform/lib/ocaml
-FLG -w +a-4-9-40-41-42-50-61-102
+FLG -w +a-4-9-20-40-41-42-50-61-102
 S /home/logan/code/running-from-javascript/node_modules/reason-react/lib/ocaml
 B /home/logan/code/running-from-javascript/node_modules/reason-react/lib/ocaml
 S src
