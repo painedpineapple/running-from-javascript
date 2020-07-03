@@ -1,5 +1,4 @@
-let user = {"name": "Running From JavaScript", "id": "0"};
+let user = {"id": 0, "name": "Running From JavaScript", "some weird key": ""};
 
-user["name"]->Js.log;
-
-// user["id"] = "1";
+user["id"]->Js.log;
+user["some weird key"]->Js.log;

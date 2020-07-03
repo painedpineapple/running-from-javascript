@@ -1,18 +1,4 @@
-type user =
-  Js.t({
-    .
-    "name": string,
-    "id": string,
-    [@bs.set] "age": int,
-  });
+let user = {"id": 0, "name": "Running From JavaScript", "some weird key": ""};
 
-let user: user = {
-  "name": "Running From JavaScript",
-  "id": "0",
-  "age": 0,
-  "age#=": age => (),
-};
-
-user##name->Js.log;
-
-user##age #= 101;
+user##id->Js.log;
+user##"some weird key"->Js.log;
